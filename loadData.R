@@ -49,7 +49,7 @@ loadData <- function() {
   data$Date <- as.Date(data$Date,format="%d/%m/%Y")
   
   #create a date time column
-  data$datetime <= as.POSIXlt(paste(data$Date,data$Time))
+  data$datetime <- as.POSIXlt(paste(data$Date,data$Time))
   
   data
 }
